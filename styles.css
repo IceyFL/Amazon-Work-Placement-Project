@@ -109,6 +109,11 @@ body {
     margin-right: 150px;
 }
 
+/* set the set height of the div */
+.setheight {
+    height: 500px;
+}
+
 /* info for the right hand */
 .info-right {
     margin-left: 150px;

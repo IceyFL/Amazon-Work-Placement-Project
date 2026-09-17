@@ -37,9 +37,10 @@
     <div class="segment" id="paragraph1">
         <!-- div for the info side of it -->
         <div class="info">
-            <h1>Advanced Apprenticeships</h1>
-            <p>Launch your technical career with a funded degree apprenticeship. You will work on real software projects, earn a competitive salary, and seamlessly bridge the gap between your T Level and a corporate coding environment.</p>
-            <!-- use flex class to line up the button with the table -->
+            <div class="setheight">
+                <h1>Advanced Apprenticeships</h1>
+                <p>Take ownership of meaningful engineering projects that directly impact the daily experiences of millions of global customers. From optimizing AWS cloud infrastructure for peak efficiency to coding and deploying innovative platform features, your fresh perspective will help solve complex problems and genuinely shape the future of our technology</p>                <!-- use flex class to line up the button with the table -->
+            </div>
             <div class="flex">
                 <!-- table to contain the fun fact section thing -->
                 <table>
@@ -75,9 +76,11 @@
 
         <!-- div for the info side of it -->
         <div class="info info-right">
-            <h1>Expert 1-to-1 Mentorship</h1>
-            <p>Never navigate your career alone. We pair entry-level talent with dedicated senior engineers to provide continuous feedback, teach industry best practices, and help you confidently build your technical capabilities.</p>
-            <!-- table to contain the fun fact section thing -->
+            <div class="setheight">
+                <h1>Expert 1-to-1 Mentorship</h1>
+                <p>Never navigate your career alone. We pair entry-level talent with dedicated senior engineers to provide continuous feedback, teach industry best practices, and help you confidently build your technical capabilities.</p>
+                <!-- table to contain the fun fact section thing -->
+            </div>
             <table>
                 <tr>
                     <th>85%+</th>
@@ -101,9 +104,11 @@
     <div class="segment" id="paragraph3">
         <!-- div for the info side of it -->
         <div class="info">
-            <h1>Engineering at Scale</h1>
-            <p>Take ownership of meaningful engineering projects that directly impact the daily experiences of millions of global customers. From optimizing AWS cloud infrastructure for peak efficiency to coding and deploying innovative platform features, your fresh perspective will help solve complex problems and genuinely shape the future of our technology</p>            <!-- table to contain the fun fact section thing -->
-            <table>
+            <div class="setheight">
+                <h1>Engineering at Scale</h1>
+                <p>Take ownership of optimizing AWS cloud infrastructure for peak efficiency to coding and deploying innovative platform features, your fresh perspective will help solve complex problems and genuinely shape the future of our technology</p>            <!-- table to contain the fun fact section thing -->
+            </div>
+                <table>
                 <tr>
                     <th>50+</th>
                     <th>50%+</th>
