@@ -26,7 +26,26 @@
 
     <!-- use title div class cos it works and i don't have to make another -->
     <div class="title">
-
+        <!-- div for the form -->
+        <div class="form">
+            <!-- make the form for inputs -->
+            <form action="index.php" method="post">
+                <h1>Newsletter Signup</h1>
+                <label for="email">Email:</label>
+                <input id="email" type="email"><br>
+                <label for="email">Email:</label>
+                <input id="email" type="email"><br>
+                <label for="email">Email:</label>
+                <input id="email" type="email"><br>
+                <label for="email">Email:</label>
+                <input id="email" type="email"><br>
+                <label for="email">Email:</label>
+                <input id="email" type="email"><br>
+                <label for="email">Email:</label>
+                <input id="email" type="email"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
 
 
