@@ -1,0 +1,264 @@
+/* Change the background color */
+body {
+    background: #515D6E;
+    margin: 0;
+    font-family: Arial, serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* hide the scrollbar */
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/*   NAV BAR   */
+/* Styling for the navbar */
+.nav {
+    background: #232F3E;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+}
+
+/* Align the nav buttons to the right */
+.nav div {
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+/* Style the nav buttons */
+.nav button {
+    background: #00000000;
+    border: 0;
+    margin: 0 20px 0 20px;
+    height: 100%;
+    width: auto;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: Arial, serif;
+    color: white;
+}
+
+/* Style the nav button on hover */
+.nav button:hover {
+    text-decoration: underline;
+}
+
+/* Style The Amazon Logo */
+#logo {
+    height: 4vh;
+    justify-self: left;
+    padding: 5px;
+    border: solid #00000000 1px;
+}
+
+/* Add border on hover */
+#logo:hover {
+    border: solid white 1px;
+}
+
+/*   TITLE   */
+/* title div settings */
+.title {
+    background: #515D6E;
+    align-items: center;
+    text-align: center;
+}
+
+/* title text style */
+.title h1{
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0;
+    padding: 140px 0 75px 0;
+}
+
+/* page description */
+.title p {
+    font-size: 26px;
+    padding-bottom: 100px;
+}
+
+
+/*   SEGMENT DIV   */
+/* main layout */
+.segment {
+    background: white;
+    color: black;
+    text-align: left;
+    padding-left: 75px;
+    display: flex;
+    overflow: hidden;
+}
+
+/* change the background color of the right ones */
+.segment-right {
+    background: #515D6E;
+}
+
+/* add a margin to the right of the info section */
+.info {
+    margin-right: 150px;
+}
+
+/* info for the right hand */
+.info-right {
+    margin-left: 150px;
+    margin-right: 0;
+}
+
+/* style the header of the segment */
+.info h1 {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 70px;
+}
+
+/* style the paragraph */
+.info p {
+    font-size: 34px;
+    margin-bottom: 100px;
+    ;
+}
+
+/* table styling for the fun fact thing */
+.info table {
+    margin-left: -30px;
+    border-spacing: 30px 0;
+}
+.info table tr th {
+    font-size: 34px;
+}
+.info table tr td {
+    font-size: 24px;
+}
+
+/* style the download button */
+.downloadbtn {
+    margin-left: 20px;
+    width: 275px;
+    margin-bottom: 20px;
+    background: #df9f1f;
+    color: black;
+    border: solid transparent 2px;
+    padding: 14px;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    height: auto;
+    text-align: center;
+
+}
+.downloadbtn:hover {
+    border: solid black 2px;
+}
+.downloadbtn:active {
+    border: solid transparent 2px;
+}
+
+/* modify the share button */
+.segment button.share {
+    background: #777777;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+    border: solid black 2px;
+    flex-shrink: 0;
+    margin-left: auto;
+    align-self: flex-end;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.segment button.share:hover {
+    background: #888888;
+}
+.segment button.share:active {
+    background: #777777;
+}
+
+/* align it properly */
+.segment a {
+    align-self: flex-end;
+}
+
+/* adjust image for left of page */
+.left {
+    border-radius: 0 50px 50px 0;
+    height: 800px;
+    margin-left: -75px;
+    margin-right: 75px;
+
+}
+
+/* adjust image for right of page */
+.right {
+    border-radius: 50px 0 0 50px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: -75px;
+}
+
+
+/*   FOOTER   */
+.footer {
+    background: #232F3E;
+    text-align: center;
+    padding: 75px 0;
+}
+
+/* label style */
+.footer label {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* input style */
+.footer input[type=email] {
+    margin: 40px;
+    height: 70px;
+    width: 550px;
+    padding: 0 40px;
+    border-radius: 15px;
+    background: lightgray;
+    font-size: 30px;
+    border: solid black 0;
+}
+
+/* button style */
+.footer button {
+    height: 40px;
+    width: auto;
+    margin: 30px;
+    background: #232F3E;
+    border: solid black 0;
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+/* button hovered */
+.footer button:hover {
+    text-decoration-color: white;
+}
+
+/* style the amazon logo footer */
+#footerlogo {
+    height: 6vh;
+    justify-self: left;
+    padding: 5px;
+    border: solid transparent 1px;
+}
