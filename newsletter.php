@@ -42,7 +42,7 @@
                 <label for="schname">School Name</label><br>
                 <input name="schname" id="schname" placeholder="Enter School Name..." type="text" required><br>
                 <label for="schemail">School Email</label><br>
-                <input name="schemail" id="schemail" placeholder="Enter School Email..." type="text" required><br>
+                <input name="schemail" id="schemail" placeholder="Enter School Email..." type="email" required><br>
                 <label for="path">Pathway</label><br>
                 <input name="path" id="path" placeholder="Enter Pathway..." type="text" required><br>
                 <label for="schyr">School Year</label><br>
