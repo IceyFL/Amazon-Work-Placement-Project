@@ -160,6 +160,8 @@ require_once "resources/common.php";
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             if(register(dbconnect_insert())) { //if it works go into this
+                //alert that they signed up
+                echo "<script> window.addEventListener('load', function () {alert('Sign Up Successful')}); </script>";
                 exit;
             }
         } catch (PDOException $e) { //catch db error
