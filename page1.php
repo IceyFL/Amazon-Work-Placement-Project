@@ -133,7 +133,7 @@
     <!-- div containing the footer -->
     <div class="footer">
         <a href="https://www.amazon.co.uk"><img src="Resources/AmazonLogo.png" alt="Amazon Logo" id="footerlogo"></a><br>
-        <a href="https//www.amazon.jobs/en-gb"><button>Amazon Careers</button></a>
+        <a href="https://www.amazon.jobs/en-gb"><button>Amazon Careers</button></a>
         <a href="https://www.amazon.co.uk"><button>Amazon</button></a>
         <a href="https://www.aboutamazon.co.uk/news"><button>Amazon News</button></a>
     </div>

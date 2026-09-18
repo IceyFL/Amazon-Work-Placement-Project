@@ -34,17 +34,17 @@
 
                 <!-- put all the inputs and labels in a table to allign em -->
                 <label for="fname">First Name</label><br>
-                <input id="fname" placeholder="Enter First Name..." type="text"><br>
+                <input name="fname" id="fname" placeholder="Enter First Name..." type="text"><br>
                 <label for="lname">Last Name</label><br>
-                <input id="lname" placeholder="Enter Last Name..." type="text"><br>
+                <input name="lname" id="lname" placeholder="Enter Last Name..." type="text"><br>
                 <label for="email">Email</label><br>
-                <input id="email" placeholder="Enter Email..." type="email"><br>
+                <input name="email" id="email" placeholder="Enter Email..." type="email"><br>
                 <label for="schname">School Name</label><br>
-                <input id="schname" placeholder="Enter School Name..." type="text"><br>
+                <input name="schname" id="schname" placeholder="Enter School Name..." type="text"><br>
                 <label for="schemail">School Email</label><br>
-                <input id="schemail" placeholder="Enter School Email..." type="text"><br>
+                <input name="schemail" id="schemail" placeholder="Enter School Email..." type="text"><br>
                 <label for="path">Pathway</label><br>
-                <input id="path" placeholder="Enter Pathway..." type="text"><br><br>
+                <input name="path" id="path" placeholder="Enter Pathway..." type="text"><br><br>
 
 
                 <button type="submit">Signup</button>
@@ -56,7 +56,7 @@
     <!-- div containing the footer -->
     <div class="footer">
         <a href="https://www.amazon.co.uk"><img src="Resources/AmazonLogo.png" alt="Amazon Logo" id="footerlogo"></a><br>
-        <a href="https//www.amazon.jobs/en-gb"><button>Amazon Careers</button></a>
+        <a href="https://www.amazon.jobs/en-gb"><button>Amazon Careers</button></a>
         <a href="https://www.amazon.co.uk"><button>Amazon</button></a>
         <a href="https://www.aboutamazon.co.uk/news"><button>Amazon News</button></a>
     </div>
