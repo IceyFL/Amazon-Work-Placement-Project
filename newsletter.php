@@ -25,25 +25,29 @@
 
 
     <!-- use title div class cos it works and i don't have to make another -->
-    <div class="title">
+    <div class="formbackground">
         <!-- div for the form -->
         <div class="form">
             <!-- make the form for inputs -->
             <form action="index.php" method="post">
                 <h1>Newsletter Signup</h1>
-                <label for="email">Email:</label>
-                <input id="email" type="email"><br>
-                <label for="email">Email:</label>
-                <input id="email" type="email"><br>
-                <label for="email">Email:</label>
-                <input id="email" type="email"><br>
-                <label for="email">Email:</label>
-                <input id="email" type="email"><br>
-                <label for="email">Email:</label>
-                <input id="email" type="email"><br>
-                <label for="email">Email:</label>
-                <input id="email" type="email"><br>
-                <button type="submit">Submit</button>
+
+                <!-- put all the inputs and labels in a table to allign em -->
+                <label for="fname">First Name</label><br>
+                <input id="fname" placeholder="Enter First Name..." type="text"><br>
+                <label for="lname">Last Name</label><br>
+                <input id="lname" placeholder="Enter Last Name..." type="text"><br>
+                <label for="email">Email</label><br>
+                <input id="email" placeholder="Enter Email..." type="email"><br>
+                <label for="schname">School Name</label><br>
+                <input id="schname" placeholder="Enter School Name..." type="text"><br>
+                <label for="schemail">School Email</label><br>
+                <input id="schemail" placeholder="Enter School Email..." type="text"><br>
+                <label for="path">Pathway</label><br>
+                <input id="path" placeholder="Enter Pathway..." type="text"><br><br>
+
+
+                <button type="submit">Signup</button>
             </form>
         </div>
     </div>

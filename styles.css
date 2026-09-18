@@ -270,35 +270,57 @@ body {
 }
 
 /*   STYLE THE SIGNUP FORM   */
+/* background */
+.formbackground {
+    background: linear-gradient(#33333370, #33333370), url("https://amazon.jobs/content/_next/image?url=https%3A%2F%2Fcdn.cms.amazon.jobs%2F52%2F98%2Fe8136353413eb325f2d5f0817b67%2Faws-eb-sde-genai-feature-1108x836.jpg&w=3840&q=75") center;
+    background-size: cover; /* 👈 Scales the image to fill the container */
+    background-repeat: no-repeat; /* 👈 Prevents the image from tiling */padding: 100px;
+}
+
 /* main div */
 .form {
     margin-top: 50px;
-    background: linear-gradient(#33333370, #33333370), url("https://amazon.jobs/content/_next/image?url=https%3A%2F%2Fcdn.cms.amazon.jobs%2F52%2F98%2Fe8136353413eb325f2d5f0817b67%2Faws-eb-sde-genai-feature-1108x836.jpg&w=3840&q=75") center;
-    width: 45%;
+    background: #515D6E;
+    width: 40%;
     justify-self: center;
-    color: black;
     border-radius: 20px;
     border: solid #232F3E 7px;
+    text-align: center;
+    color: white;
 }
 
 /* style the title */
 .form h1 {
     font-size: 55px;
     margin-bottom: 30px;
+    text-decoration: underline;
 }
 
 /* style the inputs*/
 .form input {
-    margin: 12px;
     height: 22px;
-    border: solid transparent 0;
-    border-radius: 5px;
+    border: solid transparent 2px;
+    border-bottom: solid white 3px;
+    background: transparent;
+    font-size: 22px;
+    padding: 10px;
+    margin: 0;
+    width: 50%;
+    color: white;
+}
+.form input:focus {
+    outline: none;
+}
+.form input::placeholder{
+    color: white;
 }
 
 /* style the label */
 .form label {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 0;
+    margin: 0;
+    color: transparent;
 }
 
 /* style the button */
@@ -308,10 +330,19 @@ body {
     font-size: 24px;
     font-weight: bold;
     padding: 14px 40px;
-    border-radius: 12px;
-    background: #515D6E;
-    border: solid transparent 0;
+    border-radius: 35px;
+    background: lightgray;
+    color: black;
+    border: solid black 2px;
+    width: 50%;
 }
 .form button:hover {
+    border: black solid 2px;
     color: white;
+    background: #354050;
+}
+
+.form table {
+    justify-self: center;
+    text-align: left;
 }
