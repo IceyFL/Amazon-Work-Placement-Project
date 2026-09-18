@@ -34,17 +34,19 @@
 
                 <!-- put all the inputs and labels in a table to allign em -->
                 <label for="fname">First Name</label><br>
-                <input name="fname" id="fname" placeholder="Enter First Name..." type="text"><br>
+                <input name="fname" id="fname" placeholder="Enter First Name..." type="text" required><br>
                 <label for="lname">Last Name</label><br>
-                <input name="lname" id="lname" placeholder="Enter Last Name..." type="text"><br>
+                <input name="lname" id="lname" placeholder="Enter Last Name..." type="text" required><br>
                 <label for="email">Email</label><br>
-                <input name="email" id="email" placeholder="Enter Email..." type="email"><br>
+                <input name="email" id="email" placeholder="Enter Email..." type="email" required><br>
                 <label for="schname">School Name</label><br>
-                <input name="schname" id="schname" placeholder="Enter School Name..." type="text"><br>
+                <input name="schname" id="schname" placeholder="Enter School Name..." type="text" required><br>
                 <label for="schemail">School Email</label><br>
-                <input name="schemail" id="schemail" placeholder="Enter School Email..." type="text"><br>
+                <input name="schemail" id="schemail" placeholder="Enter School Email..." type="text" required><br>
                 <label for="path">Pathway</label><br>
-                <input name="path" id="path" placeholder="Enter Pathway..." type="text"><br><br>
+                <input name="path" id="path" placeholder="Enter Pathway..." type="text" required><br>
+                <label for="schyr">School Year</label><br>
+                <input name="schyr" id="schyr" placeholder="Enter School Year..." type="text" required><br><br>
 
 
                 <button type="submit">Signup</button>

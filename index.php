@@ -1,3 +1,8 @@
+<?php
+//imports
+require_once "resources/dbcon.php";
+require_once "resources/common.php";
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -148,11 +153,26 @@
         }
     </script>
 
+    <!-- el php code -->
+    <?php
+
+    //check if was sent as post request from form
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        try {
+            if(register(dbconnect_insert())) { //if it works go into this
+                exit;
+            }
+        } catch (PDOException $e) { //catch db error
+            error_log("Database error: " . $e->getMessage());
+            // Throw the exception
+            throw $e; // Re-throw the exception  // outputs the error
+        } catch (Exception $e) { //catch other error
+            error_log("Exception: " . $e->getMessage());
+            throw $e;
+        }
+    }
+
+    ?>
+
 </body>
 </html>
-<?php
-//check if was sent as post request from form
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    echo $_POST['fname'];
-}
-?>
