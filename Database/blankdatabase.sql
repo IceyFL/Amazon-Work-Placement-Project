@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 18, 2026 at 10:15 AM
+-- Generation Time: Sep 18, 2026 at 10:19 AM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.26
 
@@ -18,24 +18,24 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `mysql`
+-- Database: `zondatabase`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `zondatabase`
+-- Table structure for table `userinfo`
 --
 
-CREATE TABLE `zondatabase` (
-  `id` int UNSIGNED NOT NULL,
+CREATE TABLE `userinfo` (
+  `id` int NOT NULL,
   `FirstName` tinytext NOT NULL,
   `LastName` tinytext NOT NULL,
   `Email` tinytext NOT NULL,
   `SchoolName` tinytext NOT NULL,
   `SchoolEmail` tinytext NOT NULL,
   `Pathway` tinytext NOT NULL,
-  `SchoolYear` tinyint NOT NULL
+  `SchoolYear` tinytext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
@@ -43,9 +43,9 @@ CREATE TABLE `zondatabase` (
 --
 
 --
--- Indexes for table `zondatabase`
+-- Indexes for table `userinfo`
 --
-ALTER TABLE `zondatabase`
+ALTER TABLE `userinfo`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -53,10 +53,10 @@ ALTER TABLE `zondatabase`
 --
 
 --
--- AUTO_INCREMENT for table `zondatabase`
+-- AUTO_INCREMENT for table `userinfo`
 --
-ALTER TABLE `zondatabase`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT;
+ALTER TABLE `userinfo`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
