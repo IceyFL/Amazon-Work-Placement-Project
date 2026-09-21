@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- link the stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body>  
     <!-- div for the nav bar -->
     <div class="nav">
         <!-- add logo as a redirect button to amazon -->
