@@ -1,4 +1,23 @@
 <?php //this is common
+
+
+#user message to pass error messages through the session to different parts of the site.
+function user_message() {
+    $message = "";
+
+    //check if the user message value is set in the usermessage super global
+    if (isset($_SESSION["usermessage"])){
+        //save message to variable
+        $message = $_SESSION["usermessage"];
+        //unset it so that it isn't found again
+        unset($_SESSION["usermessage"]);
+    }
+    // return it from the function
+    return $message;
+}
+
+
+
 //function to add person to el database
 function register($conn){
     //prepare and execute the sql query
@@ -33,16 +52,16 @@ function addSchool($conn){
 
 // Function to fetch all schools from the database
 function getSchools($conn){
-    // Prepare and execute the SQL query
+    //Prepare and execute the SQL query
     $sql = "SELECT * FROM schools";
-    $stmt = $conn->prepare($sql); // Prepare the SQL statement
+    $stmt = $conn->prepare($sql); //Prepare the SQL statement
 
-    $stmt->execute(); // Run the query
+    $stmt->execute(); // execute the query
 
-    // Fetch all records as an associative array
+    //get all the stuff from the database
     $schools = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    $conn = null; // Closes the connection so it can't be abused
-    return $schools; // Returns the list of schools
+    $conn = null; //close connection so cant be abused
+    return $schools; //return the list of schools
 }
 ?>
