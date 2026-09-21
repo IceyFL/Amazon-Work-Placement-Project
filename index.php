@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 //imports
 require_once "resources/dbcon.php";
 require_once "resources/common.php";
@@ -41,8 +44,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="https://www.amazon.co.uk"><img src="Resources/AmazonLogo.png" alt="Amazon Logo" id="logo"></a>
         <div>
             <a href="index.php"><button>Homepage</button></a>
-            <a href="page1.php"><button>Page 1</button></a>
-            <a href="page2.php"><button>Page 2</button></a>
             <a href="newsletter.php"><button>Newsletter</button></a>
         </div>
     </div>

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,8 +19,6 @@
     <a href="https://www.amazon.co.uk"><img src="Resources/AmazonLogo.png" alt="Amazon Logo" id="logo"></a>
     <div>
         <a href="index.php"><button>Homepage</button></a>
-        <a href="page1.php"><button>Page 1</button></a>
-        <a href="page2.php"><button>Page 2</button></a>
         <a href="newsletter.php"><button>Newsletter</button></a>
     </div>
 </div>

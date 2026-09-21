@@ -322,6 +322,27 @@ body {
     color: white;
 }
 
+/* style the dropdown box */
+.form select {
+    border: solid white 3px;
+    background: transparent;
+    font-size: 22px;
+    padding: 7px;
+    margin: 20px 0 0 0;
+    width: 53%;
+    color: white;
+}
+.form select:focus {
+    outline: none;
+}
+.form input::placeholder {
+    color: white;
+}
+.form option {
+    background: #232F3E;
+}
+
+
 /* style the label */
 .form label {
     font-weight: bold;

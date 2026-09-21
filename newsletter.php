@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,8 +19,6 @@
         <a href="https://www.amazon.co.uk"><img src="Resources/AmazonLogo.png" alt="Amazon Logo" id="logo"></a>
         <div>
             <a href="index.php"><button>Homepage</button></a>
-            <a href="page1.php"><button>Page 1</button></a>
-            <a href="page2.php"><button>Page 2</button></a>
             <a href="newsletter.php"><button>Newsletter</button></a>
         </div>
     </div>
@@ -39,14 +40,21 @@
                 <input name="lname" id="lname" placeholder="Enter Last Name..." type="text" required><br>
                 <label for="email">Email</label><br>
                 <input name="email" id="email" placeholder="Enter Email..." type="email" required><br>
-                <label for="schname">School Name</label><br>
-                <input name="schname" id="schname" placeholder="Enter School Name..." type="text" required><br>
-                <label for="schemail">School Email</label><br>
-                <input name="schemail" id="schemail" placeholder="Enter School Email..." type="email" required><br>
-                <label for="path">Pathway</label><br>
-                <input name="path" id="path" placeholder="Enter Pathway..." type="text" required><br>
-                <label for="schyr">School Year</label><br>
-                <input name="schyr" id="schyr" placeholder="Enter School Year..." type="text" required><br><br>
+                <label for="school_id">Year Group</label>
+                <select id="school_id" name="school_id">
+                <?php
+                require_once "resources/common.php";
+                require "resources/dbcon.php";
+                foreach (getSchools(dbconnect_insert()) as $school) {
+                    echo "<option value='" . $school["school_id"] . "'>" . $school["SchoolName"] . "</option>";
+                }
+                ?>
+                </select><br>
+                <label for="Year">Year Group</label>
+                <select id="Year" name="Year">
+                    <option value=12 id="12">Year 12</option>
+                    <option value=13 id="13">Year 13</option>
+                </select><br>
 
 
                 <button type="submit">Signup</button>
