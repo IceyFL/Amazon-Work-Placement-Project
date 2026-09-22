@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="form">
         <!-- make the form for inputs -->
         <form action="addschool.php" method="post">
-            <h1>Newsletter Signup</h1>
+            <h1>School Signup</h1>
 
             <!-- put all the inputs and labels in a table to allign em -->
             <label for="schname">School Name</label><br>
