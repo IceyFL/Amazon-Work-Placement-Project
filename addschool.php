@@ -14,11 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         }
     } catch (PDOException $e) { //catch db error
-        error_log("Database error: " . $e->getMessage());
+        $_Session["usermessage"] = "Database error: " . $e->getMessage();
         // Throw the exception
         throw $e; // Re-throw the exception  // outputs the error
     } catch (Exception $e) { //catch other error
-        error_log("Exception: " . $e->getMessage());
+        $_Session["usermessage"] = "Exception: " . $e->getMessage();
         throw $e;
     }
 }
