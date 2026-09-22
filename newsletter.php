@@ -19,7 +19,10 @@ session_start();
         <a href="https://www.amazon.co.uk"><img src="Resources/AmazonLogo.png" alt="Amazon Logo" id="logo"></a>
         <div>
             <a href="index.php"><button>Homepage</button></a>
+            <a href="private.php"><button>Secret</button></a>
             <a href="newsletter.php"><button>Newsletter</button></a>
+            <a href="login.php"><button>Login</button></a>
+            <a href="logout.php"><button>Logout</button></a>
         </div>
     </div>
 

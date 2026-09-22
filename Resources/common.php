@@ -6,7 +6,7 @@ function onlyuser($conn, $email) {
     //make statement add params and execute it
     $sql = "SELECT email FROM user WHERE email = ?";
     $stmt = $conn->prepare($sql);
-    $stmt ->bindparam(1, $email);
+    $stmt ->bindParam(1, $email);
     $stmt ->execute();
 
     //get results
@@ -19,30 +19,45 @@ function onlyuser($conn, $email) {
 //function to register the user
 function reguser($conn) {
     $sql = "INSERT INTO user (name, email, pswd) VALUES (?, ?, ?)";
-    $conn->prepare($sql); //preapre the sql
+    $stmt = $conn->prepare($sql); //prepare the sql
+
+    //hash the pswd
+    $pswd = password_hash($_POST["pswd"], PASSWORD_DEFAULT);
 
     //add parameters
-    $conn->bind_param(1, $_POST["name"]);
-    $conn->bind_param(2, $_POST["email"]);
-    $conn->bind_param(3, password_hash($_POST["password"], PASSWORD_DEFAULT)); //hash the password
+    $stmt->bindParam(1, $_POST["name"]);
+    $stmt->bindParam(2, $_POST["email"]);
+    $stmt->bindParam(3, $pswd); //hash the password
 
     //execute the statement
-    $conn->execute();
+    $stmt->execute();
+
+    $conn = null; //closes the connection so cant be abused
+    return true; //registration successful
 }
 
 
 //function to login to an account
 function login($conn) {
     //make the statement
-    $sql = "SELECT * FROM user WHERE email = ? AND pswd = ?";
-    $conn->prepare($sql);
+    $sql = "SELECT * FROM user WHERE email = ?";
+    $stmt = $conn->prepare($sql);
+
     //bind the params
-    $conn->bind_param(1, $_POST["email"]);
-    $conn->bind_param(2, password_hash($_POST["pswd"], PASSWORD_DEFAULT)); //hash the pswd
-    $conn->execute(); //run the cmd
+    $stmt->bindParam(1, $_POST["email"]);
+    $stmt->execute(); //run the cmd
     //get the result
-    $result = $conn->fetchall(PDO::FETCH_ASSOC);
-    return (bool)$result; //return if the credentials are correct (the email and pswd were found in db)
+    $result = $stmt->fetchall(PDO::FETCH_ASSOC);
+
+    //set logged in default
+    $loggedin = false;
+    if ($result) {
+        $loggedin = password_verify($_POST["pswd"], $result[0]["pswd"]);
+    }
+
+    //if logged in return user id
+    if ($loggedin) {return $result[0]["user_id"];}
+    return false;
 }
 
 
@@ -77,7 +92,7 @@ function register($conn){
 
     $stmt->execute(); //run the query to insert
     $conn = null; //closes the connection so cant be abused
-    return true; //registration successfull
+    return true; //registration successful
 }
 
 //function to add a school

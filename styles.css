@@ -321,6 +321,9 @@ body {
 .form input::placeholder{
     color: white;
 }
+.form input[type=password] {
+    margin: 10px 0;
+}
 
 /* style the dropdown box */
 .form select {
@@ -351,7 +354,19 @@ body {
     color: transparent;
 }
 
-/* style the button */
+/* style the label at the bottom */
+.form a {
+    font-size: 22px;
+    display: inline-block;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+.form a:link,
+.form a:visited {
+    color: white;
+}
+
+    /* style the button */
 .form button {
     margin-top: 25px;
     margin-bottom: 50px;
