@@ -51,6 +51,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 
+    <!-- chat box -->
+    <div class="chatbox">
+        <!-- chat bot title -->
+        <div class="chattop">
+            <img id="pfp" alt="AI Profile Picture" src="https://static.vecteezy.com/system/resources/thumbnails/002/534/006/small/social-media-chatting-online-blank-profile-picture-head-and-body-icon-people-standing-icon-grey-background-free-vector.jpg">
+            <p id="name">AI</p>
+            <p id="dash">-</p>
+            <p id="desc">Amazon Chat Bot</p>
+        </div>
+        <!-- chat -->
+        <div class="chat">
+            <input id="chatbox" type="text" placeholder="Type Here...">
+            <label for="chatbox">Chat Box</label><br>
+        </div>
+
+    </div>
+
 
 
     <!-- div for the title -->
@@ -167,14 +184,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="https://www.aboutamazon.co.uk/news"><button>Amazon News</button></a>
     </div>
 
-    <script>
-        // function to copy the link + the value to the clipboard
-        function copy(value) {
-            //format the link
-            value = window.location + value
-            //copy it to el clipboard
-            navigator.clipboard.writeText(value)
-        }
-    </script>
+    <script src="script.js">
 </body>
 </html>
