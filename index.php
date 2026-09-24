@@ -73,9 +73,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- div for the title -->
     <div class="title">
         <!-- Title -->
-        <h1>Post T Level<br>options at<br>Amazon</h1>
+        <h1>T Level Pathways<br>at<br>Amazon</h1>
         <!-- description paragraph -->
-        <p>Discover how your technical T Level qualification<br>can launch a high-impact engineering career<br>or funded degree apprenticeship at Amazon.</p>
+        <p>Discover what T Levels are<br>and how they can progress your career<br> at Amazon or elsewhere</p>
     </div>
 
 
@@ -85,21 +85,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- div for the info side of it -->
         <div class="info">
             <div class="setheight">
-                <h1>Advanced Apprenticeships</h1>
-                <p>Take ownership of meaningful engineering projects that directly impact the daily experiences of millions of global customers. From optimizing AWS cloud infrastructure for peak efficiency to coding and deploying innovative platform features, your fresh perspective will help solve complex problems and genuinely shape the future of our technology</p>                <!-- use flex class to line up the button with the table -->
+                <h1>What are T Levels?</h1>
+                <p>T levels are a Level 3 qualification in the UK, they are somewhat of a compromise between BTEC's and A Levels. They have some exams similar to A Levels,
+                 However also some more practical work. They are however different as T Levels include 315 require of work experience to pass. This overall makes them a good balance
+                 of everything.</p>
+
             </div>
+            <!-- use flex class to line up the button with the table -->
             <div class="flex">
                 <!-- table to contain the fun fact section thing -->
                 <table>
                     <tr>
-                        <th>3-4 Years</th>
-                        <th>£30,000</th>
-                        <th>100%</th>
+                        <th>92.6%</th>
+                        <th>20+</th>
+                        <th>315 Hours</th>
                     </tr>
                     <tr>
-                        <td>Program Duration</td>
-                        <td>Starting Salary</td>
-                        <td>Tuition Funded</td>
+                        <td>Pass Rate</td>
+                        <td>Subject Options</td>
+                        <td>Work Placement</td>
                     </tr>
                 </table>
                 <!-- download PDF button -->
@@ -124,20 +128,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- div for the info side of it -->
         <div class="info info-right">
             <div class="setheight">
-                <h1>Expert 1-to-1 Mentorship</h1>
-                <p>Never navigate your career alone. We pair entry-level talent with dedicated senior engineers to provide continuous feedback, teach industry best practices, and help you confidently build your technical capabilities.</p>
+                <h1>Who are T Levels for?</h1>
+                <p>T Levels are designed for students between the age of 16-19. They are aimed at students who are more interested in real world experience
+                 than learning content for an exam. They are also better for people who may perform badly under the stress of exams, as T Levels are less exam focused.</p>
                 <!-- table to contain the fun fact section thing -->
             </div>
             <table>
                 <tr>
-                    <th>85%+</th>
-                    <th>86%</th>
-                    <th>7,000+</th>
+                    <th>27,500</th>
+                    <th>307</th>
+                    <th>97.2%</th>
                 </tr>
                 <tr>
-                    <td>Graduation Rate</td>
-                    <td>Stay at Amazon</td>
-                    <td>UK Opportunities</td>
+                    <td>Students Studying</td>
+                    <td>Colleges Offer</td>
+                    <td>Complete Placement</td>
                 </tr>
             </table>
         </div>
@@ -152,19 +157,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- div for the info side of it -->
         <div class="info">
             <div class="setheight">
-                <h1>Engineering at Scale</h1>
-                <p>Take ownership of optimizing AWS cloud infrastructure for peak efficiency to coding and deploying innovative platform features, your fresh perspective will help solve complex problems and genuinely shape the future of our technology</p>            <!-- table to contain the fun fact section thing -->
+                <h1>T Levels at Amazon</h1>
+                <p>Amazon is becoming increasingly involved with T Level courses. We are taking 100s of students to complete 3 weeks of their placement.
+                    The placement allows students to gain experience of working with amazon in small teams, and simultaneously helps prepare students for
+                    their Occupational Specialism.
+                Completing the placement with Amazon also increases your chances of being offered an Amazon Apprenticeship after completing your course.</p>
+                <!-- table to contain the fun fact section thing -->
             </div>
                 <table>
                 <tr>
-                    <th>50+</th>
-                    <th>50%+</th>
-                    <th>1,000+</th>
+                    <th>3</th>
+                    <th>1</th>
+                    <th>5-7 People</th>
                 </tr>
                 <tr>
-                    <td>Different Schemes</td>
-                    <td>STEAM Careers</td>
-                    <td>New Roles Yearly</td>
+                    <td>Weeks</td>
+                    <td>Project</td>
+                    <td>Team Size</td>
                 </tr>
             </table>
         </div>
