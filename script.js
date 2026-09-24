@@ -42,6 +42,41 @@ if (a.length >0 && b.length >0) {
             //save users msg and reset box
             msg = c.value;
             c.value = "";
+            //create a message
+            let msgBox = document.createElement('div');
+            msgBox.textContent = msg;
+            msgBox.style.background = "white";
+            msgBox.style.color = "black";
+            msgBox.style.fontSize = "22px";
+            msgBox.style.padding = "10px";
+            msgBox.style.margin = "10px";
+            msgBox.style.borderRadius = "10px";
+            msgBox.style.width = "200px";
+
+            //find the most recent msg
+            let secondChild = b.firstElementChild.nextElementSibling;
+
+            //append the new message after that one
+            b.insertBefore(msgBox, secondChild);
+
+
+            //create a response
+            msgBox = document.createElement('div');
+            msgBox.textContent = "Sorry i cannot fulfill that request.";
+            msgBox.style.background = "deepskyblue";
+            msgBox.style.color = "black";
+            msgBox.style.fontSize = "22px";
+            msgBox.style.padding = "10px";
+            msgBox.style.margin = "10px";
+            msgBox.style.borderRadius = "10px";
+            msgBox.style.width = "200px";
+            msgBox.style.marginLeft = "auto";
+
+            //find the most recent msg
+            secondChild = b.firstElementChild.nextElementSibling;
+
+            //append the new message after that one
+            b.insertBefore(msgBox, secondChild);
         }
     })
 }

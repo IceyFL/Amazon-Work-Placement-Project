@@ -462,4 +462,5 @@ body {
     background: #777777;
     display: flex;
     flex-direction: column-reverse;
+    overflow-y: auto;
 }
