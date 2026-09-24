@@ -1,6 +1,6 @@
 <?php
 session_start();
-unset($_SESSION["userid"]);
+$_SESSION["userid"] = false;
 header("Location: index.php");
 exit;
 ?>
