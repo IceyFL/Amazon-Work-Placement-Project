@@ -62,7 +62,7 @@ if (a.length >0 && b.length >0) {
 
             //create a response
             msgBox = document.createElement('div');
-            msgBox.textContent = "Sorry i cannot fulfill that request.";
+            msgBox.textContent = "Sorry i cannot fulfil that request.";
             msgBox.style.background = "deepskyblue";
             msgBox.style.color = "black";
             msgBox.style.fontSize = "22px";
