@@ -1,5 +1,5 @@
 <?php
-//imports
+//import the stuff
 require_once "resources/dbcon.php";
 require_once "resources/common.php";
 
