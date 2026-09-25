@@ -7,10 +7,30 @@ function copy(value) {
 }
 
 
+// function to style the msgbox
+function style(msg, side) {
+    //default styling
+    msg.style.color = "black";
+    msg.style.fontSize = "22px";
+    msg.style.padding = "10px";
+    msg.style.margin = "10px";
+    msg.style.borderRadius = "10px";
+    msg.style.width = "200px";
+    //left side specific styling
+    if (side==="left") {
+        msg.style.background = "white";
+    } else { //right side
+        msg.style.background = "deepskyblue";
+        msg.style.marginLeft = "auto";
+    }
+    //return final styled msg box
+    return msg;
+}
+
 //variable to store open state
 let chatOpen = false;
 
-//setup the chat box so that it pops up when the user clicks it
+//set up the chat box so that it pops up when the user clicks it
 //get the chat boxes
 let a = document.getElementsByClassName("chattop");
 let b = document.getElementsByClassName("chat");
@@ -24,12 +44,11 @@ if (a.length >0 && b.length >0) {
     //listen for title being clicked to close/open chat box
     a.addEventListener("click", function() {
         chatOpen = !chatOpen;
-        //if open open it
+        //if open, open it
         if (chatOpen) {
             b.style.visibility = "visible";
             b.style.height = "460px";
-        }
-        else { //if closed close it
+        } else { //if closed, close it
             b.style.visibility = "hidden";
             b.style.height = "0";
         }
@@ -37,21 +56,15 @@ if (a.length >0 && b.length >0) {
 
     //add listener to the chatbox input
     c.addEventListener("keypress", function(e) {
-        //when user enters
-        if (e.key === "Enter") {
+        //when user enters and msg box not empty
+        if (e.key === "Enter" && c.value !== "") {
             //save users msg and reset box
-            msg = c.value;
+            let msg = c.value;
             c.value = "";
             //create a message
             let msgBox = document.createElement('div');
             msgBox.textContent = msg;
-            msgBox.style.background = "white";
-            msgBox.style.color = "black";
-            msgBox.style.fontSize = "22px";
-            msgBox.style.padding = "10px";
-            msgBox.style.margin = "10px";
-            msgBox.style.borderRadius = "10px";
-            msgBox.style.width = "200px";
+            msgBox = style(msgBox, "left");
 
             //find the most recent msg
             let secondChild = b.firstElementChild.nextElementSibling;
@@ -63,14 +76,7 @@ if (a.length >0 && b.length >0) {
             //create a response
             msgBox = document.createElement('div');
             msgBox.textContent = "Sorry i cannot fulfil that request.";
-            msgBox.style.background = "deepskyblue";
-            msgBox.style.color = "black";
-            msgBox.style.fontSize = "22px";
-            msgBox.style.padding = "10px";
-            msgBox.style.margin = "10px";
-            msgBox.style.borderRadius = "10px";
-            msgBox.style.width = "200px";
-            msgBox.style.marginLeft = "auto";
+            msgBox = style(msgBox, "right");
 
             //find the most recent msg
             secondChild = b.firstElementChild.nextElementSibling;
