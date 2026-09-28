@@ -162,7 +162,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="https://www.amazon.co.uk"><button>Amazon</button></a>
         <a href="https://www.aboutamazon.co.uk/news"><button>Amazon News</button></a>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

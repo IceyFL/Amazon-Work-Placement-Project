@@ -31,4 +31,6 @@
         <label for="chatbox">Chat Box</label><br>
     </div>
 
+    <script src="script.js"></script>
+
 </div>
