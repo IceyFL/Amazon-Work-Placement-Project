@@ -73,10 +73,32 @@ if (a.length >0 && b.length >0) {
             b.insertBefore(msgBox, secondChild);
 
 
-            //create a response
+            // create a response
+            let responses = [
+                "Sorry, I cannot fulfil that request.",
+                "Hmm, I'm not sure about that.",
+                "Interesting! Let me think about that.",
+                "I don't know how to answer that.",
+                "Could you try asking that differently?",
+                "That's a good question!",
+                "I'm afraid I can't help with that.",
+                "Maybe try something else?",
+                "I understand what you're saying.",
+                "That's something I'll have to think about."
+            ];
+
+            // pick a random response
+            let randomResponse = responses[Math.floor(Math.random() * responses.length)];
+
             msgBox = document.createElement('div');
-            msgBox.textContent = "Sorry i cannot fulfil that request.";
+            msgBox.textContent = randomResponse;
             msgBox = style(msgBox, "right");
+
+            // find the most recent msg
+            secondChild = b.firstElementChild.nextElementSibling;
+
+            // append the new message after that one
+            b.insertBefore(msgBox, secondChild);
 
             //find the most recent msg
             secondChild = b.firstElementChild.nextElementSibling;
