@@ -76,15 +76,15 @@ if (a.length >0 && b.length >0) {
             // create a response
             let responses = [
                 "Sorry, I cannot fulfil that request.",
-                "Hmm, I'm not sure about that.",
-                "Interesting! Let me think about that.",
+                "Yeah I agree.",
+                "Hmmm...",
                 "I don't know how to answer that.",
                 "Could you try asking that differently?",
                 "That's a good question!",
-                "I'm afraid I can't help with that.",
-                "Maybe try something else?",
-                "I understand what you're saying.",
-                "That's something I'll have to think about."
+                "Thinking...",
+                "It could be, yeah.",
+                "I dont understand what you're saying.",
+                "Sorry, what do you mean?"
             ];
 
             // pick a random response
