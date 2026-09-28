@@ -1,16 +1,16 @@
 <!-- div for the nav bar -->
 <div class="nav">
     <!-- add logo as a redirect button to amazon -->
-    <a href="https://www.amazon.co.uk"><img src="../Resources/AmazonLogo.png" alt="Amazon Logo" id="logo"></a>
+    <a href="https://www.amazon.co.uk"><img src="Resources/AmazonLogo.png" alt="Amazon Logo" id="logo"></a>
     <div>
-        <a href="../index.php"><button>Homepage</button></a>
-        <a href="../private.php"><button>Secret</button></a>
-        <a href="../newsletter.php"><button>Newsletter</button></a>
+        <a href="index.php"><button>Homepage</button></a>
+        <a href="private.php"><button>Secret</button></a>
+        <a href="newsletter.php"><button>Newsletter</button></a>
         <?php
         if (!isset($_SESSION["userid"]) or !$_SESSION["userid"]) {
-            echo '<a href="../login.php"><button>Login</button></a>';
+            echo '<a href="login.php"><button>Login</button></a>';
         } else {
-            echo '<a href="../logout.php"><button>Logout</button></a>';
+            echo '<a href="logout.php"><button>Logout</button></a>';
         }
         ?>
     </div>
