@@ -84,8 +84,18 @@ if (a.length >0 && b.length >0) {
                 "Thinking...",
                 "It could be, yeah.",
                 "I dont understand what you're saying.",
-                "Sorry, what do you mean?"
+                "Other languages are being developed.",
+                "No.",
+                "Google is free.",
+                "Hello",
+                "Goodbye",
+                "That's not a good question!",
+                "I'm sorry.",
+                "Its not true.",
+                "Please can you repeat that again?",
+                "Adios"
             ];
+
 
             // pick a random response
             let randomResponse = responses[Math.floor(Math.random() * responses.length)];
