@@ -61,17 +61,6 @@ if (a.length >0 && b.length >0) {
             //save users msg and reset box
             let msg = c.value;
 
-
-            //play audio on message recieved
-            //create audio var with the path to the file
-            const audio = new Audio('resources/message.m4a');
-
-            //play the audio
-            audio.play().catch(error => {
-                console.error("Audio playback failed:", error);
-            });
-
-
             c.value = "";
             //create a message
             let msgBox = document.createElement('div');
