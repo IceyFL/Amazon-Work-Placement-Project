@@ -101,6 +101,14 @@ if (a.length >0 && b.length >0) {
             // pick a random response
             let randomResponse = responses[Math.floor(Math.random() * responses.length)];
 
+            // secret command: typing "circle mode" toggles circle mode on the whole site
+            if (msg.trim().toLowerCase() === "circle mode") {
+                document.body.classList.toggle("circle-mode");
+                randomResponse = document.body.classList.contains("circle-mode")
+                    ? "Circle mode activated."
+                    : "Circle mode deactivated.";
+            }
+
             msgBox = document.createElement('div');
             msgBox.textContent = randomResponse;
             msgBox = style(msgBox, "right");
