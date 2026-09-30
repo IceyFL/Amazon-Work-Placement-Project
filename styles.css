@@ -466,11 +466,3 @@ body {
     flex-direction: column-reverse;
     overflow-y: auto;
 }
-
-/*   CIRCLE MODE   */
-/* toggled by typing "circle mode" into the chatbot */
-body.circle-mode *,
-body.circle-mode *::before,
-body.circle-mode *::after {
-    border-radius: 70% !important;
-}
