@@ -61,17 +61,6 @@ if (a.length >0 && b.length >0) {
             //save users msg and reset box
             let msg = c.value;
 
-
-            //play audio on message recieved
-            //create audio var with the path to the file
-            const audio = new Audio('resources/message.m4a');
-
-            //play the audio
-            audio.play().catch(error => {
-                console.error("Audio playback failed:", error);
-            });
-
-
             c.value = "";
             //create a message
             let msgBox = document.createElement('div');
@@ -96,8 +85,18 @@ if (a.length >0 && b.length >0) {
                 "Thinking...",
                 "It could be, yeah.",
                 "I dont understand what you're saying.",
-                "Sorry, what do you mean?"
+                "Other languages are being developed.",
+                "No.",
+                "Google is free.",
+                "Hello",
+                "Goodbye",
+                "That's not a good question!",
+                "I'm sorry.",
+                "Its not true.",
+                "Please can you repeat that again?",
+                "Adios"
             ];
+
 
             // pick a random response
             let randomResponse = responses[Math.floor(Math.random() * responses.length)];
