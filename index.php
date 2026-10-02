@@ -126,7 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="segment" id="paragraph3">
         <!-- div for the info side of it -->
         <div class="info">
-            <div class="">
+            <div class="setheight">
                 <h1>T Levels at Amazon</h1>
                 <p>Amazon is becoming increasingly involved with T Level courses. We are taking 100s of students to complete 3 weeks of their placement.
                     The placement allows students to gain experience of working with amazon in small teams, and simultaneously helps prepare students for
