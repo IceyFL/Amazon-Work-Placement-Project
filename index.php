@@ -126,12 +126,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="segment" id="paragraph3">
         <!-- div for the info side of it -->
         <div class="info">
-            <div class="setheight">
+            <div class="">
                 <h1>T Levels at Amazon</h1>
                 <p>Amazon is becoming increasingly involved with T Level courses. We are taking 100s of students to complete 3 weeks of their placement.
                     The placement allows students to gain experience of working with amazon in small teams, and simultaneously helps prepare students for
                     their Occupational Specialism.
-                Completing the placement with Amazon also increases your chances of being offered an Amazon Apprenticeship after completing your course.</p>
+                Completing the placement with also increases your chances of being offered an Amazon Apprenticeship after completing your course.</p>
                 <!-- table to contain the fun fact section thing -->
             </div>
                 <table>
@@ -163,4 +163,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="https://www.aboutamazon.co.uk/news"><button>Amazon News</button></a>
     </div>
 </body>
-</html>
+</html> 
